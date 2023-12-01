@@ -11,6 +11,10 @@
 		D527441F2B1455B100AA94C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D527441E2B1455B100AA94C7 /* ContentView.swift */; };
 		D52744212B1455B200AA94C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D52744202B1455B200AA94C7 /* Assets.xcassets */; };
 		D52744242B1455B200AA94C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D52744232B1455B200AA94C7 /* Preview Assets.xcassets */; };
+		D52744422B15A62F00AA94C7 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = D52744412B15A62F00AA94C7 /* OAuth2 */; };
+		D52744452B16DF5200AA94C7 /* OAuthSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D52744442B16DF5200AA94C7 /* OAuthSwift */; };
+		D52744482B197F1500AA94C7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D52744472B197F1500AA94C7 /* .gitignore */; };
+		D527444C2B19861A00AA94C7 /* APIpasswords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D527444B2B19861A00AA94C7 /* APIpasswords.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		D527441E2B1455B100AA94C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D52744202B1455B200AA94C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D52744232B1455B200AA94C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D52744462B16E50D00AA94C7 /* spotify-to-youtube-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "spotify-to-youtube-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D52744472B197F1500AA94C7 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		D527444B2B19861A00AA94C7 /* APIpasswords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIpasswords.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52744452B16DF5200AA94C7 /* OAuthSwift in Frameworks */,
+				D52744422B15A62F00AA94C7 /* OAuth2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +60,13 @@
 		D527441B2B1455B100AA94C7 /* spotify_to_youtube */ = {
 			isa = PBXGroup;
 			children = (
+				D52744462B16E50D00AA94C7 /* spotify-to-youtube-Info.plist */,
 				D527441C2B1455B100AA94C7 /* spotify_to_youtubeApp.swift */,
 				D527441E2B1455B100AA94C7 /* ContentView.swift */,
 				D52744202B1455B200AA94C7 /* Assets.xcassets */,
+				D52744472B197F1500AA94C7 /* .gitignore */,
 				D52744222B1455B200AA94C7 /* Preview Content */,
+				D527444B2B19861A00AA94C7 /* APIpasswords.swift */,
 			);
 			path = spotify_to_youtube;
 			sourceTree = "<group>";
@@ -83,6 +95,10 @@
 			dependencies = (
 			);
 			name = spotify_to_youtube;
+			packageProductDependencies = (
+				D52744412B15A62F00AA94C7 /* OAuth2 */,
+				D52744442B16DF5200AA94C7 /* OAuthSwift */,
+			);
 			productName = spotify_to_youtube;
 			productReference = D52744192B1455B100AA94C7 /* spotify_to_youtube.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +127,11 @@
 				Base,
 			);
 			mainGroup = D52744102B1455B100AA94C7;
+			packageReferences = (
+				D52744352B158ECF00AA94C7 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				D52744402B15A62F00AA94C7 /* XCRemoteSwiftPackageReference "OAuth2" */,
+				D52744432B16DF5200AA94C7 /* XCRemoteSwiftPackageReference "OAuthSwift" */,
+			);
 			productRefGroup = D527441A2B1455B100AA94C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D52744242B1455B200AA94C7 /* Preview Assets.xcassets in Resources */,
+				D52744482B197F1500AA94C7 /* .gitignore in Resources */,
 				D52744212B1455B200AA94C7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +161,7 @@
 			files = (
 				D527441F2B1455B100AA94C7 /* ContentView.swift in Sources */,
 				D527441D2B1455B100AA94C7 /* spotify_to_youtubeApp.swift in Sources */,
+				D527444C2B19861A00AA94C7 /* APIpasswords.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +295,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"spotify_to_youtube/Preview Content\"";
+				DEVELOPMENT_TEAM = R6TDT8283R;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/spotify_to_youtube/Preview\\ Content",
+					"$(PROJECT_DIR)/spotify_to_youtube/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "spotify-to-youtube-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,8 +330,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"spotify_to_youtube/Preview Content\"";
+				DEVELOPMENT_TEAM = R6TDT8283R;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/spotify_to_youtube/Preview\\ Content",
+					"$(PROJECT_DIR)/spotify_to_youtube/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "spotify-to-youtube-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +379,46 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D52744352B158ECF00AA94C7 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.1;
+			};
+		};
+		D52744402B15A62F00AA94C7 /* XCRemoteSwiftPackageReference "OAuth2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/p2/OAuth2.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.2;
+			};
+		};
+		D52744432B16DF5200AA94C7 /* XCRemoteSwiftPackageReference "OAuthSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OAuthSwift/OAuthSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D52744412B15A62F00AA94C7 /* OAuth2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D52744402B15A62F00AA94C7 /* XCRemoteSwiftPackageReference "OAuth2" */;
+			productName = OAuth2;
+		};
+		D52744442B16DF5200AA94C7 /* OAuthSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D52744432B16DF5200AA94C7 /* XCRemoteSwiftPackageReference "OAuthSwift" */;
+			productName = OAuthSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D52744112B1455B100AA94C7 /* Project object */;
 }
