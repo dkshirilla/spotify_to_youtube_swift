@@ -14,7 +14,7 @@
 		D52744422B15A62F00AA94C7 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = D52744412B15A62F00AA94C7 /* OAuth2 */; };
 		D52744452B16DF5200AA94C7 /* OAuthSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D52744442B16DF5200AA94C7 /* OAuthSwift */; };
 		D52744482B197F1500AA94C7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D52744472B197F1500AA94C7 /* .gitignore */; };
-		D527444C2B19861A00AA94C7 /* APIpasswords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D527444B2B19861A00AA94C7 /* APIpasswords.swift */; };
+		D527444E2B1C404600AA94C7 /* APIpasswords.swift in Sources */ = {isa = PBXBuildFile; fileRef = D527444D2B1C404600AA94C7 /* APIpasswords.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		D52744232B1455B200AA94C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D52744462B16E50D00AA94C7 /* spotify-to-youtube-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "spotify-to-youtube-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D52744472B197F1500AA94C7 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
-		D527444B2B19861A00AA94C7 /* APIpasswords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIpasswords.swift; sourceTree = "<group>"; };
+		D527444D2B1C404600AA94C7 /* APIpasswords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIpasswords.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 				D52744202B1455B200AA94C7 /* Assets.xcassets */,
 				D52744472B197F1500AA94C7 /* .gitignore */,
 				D52744222B1455B200AA94C7 /* Preview Content */,
-				D527444B2B19861A00AA94C7 /* APIpasswords.swift */,
+				D527444D2B1C404600AA94C7 /* APIpasswords.swift */,
 			);
 			path = spotify_to_youtube;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			files = (
 				D527441F2B1455B100AA94C7 /* ContentView.swift in Sources */,
 				D527441D2B1455B100AA94C7 /* spotify_to_youtubeApp.swift in Sources */,
-				D527444C2B19861A00AA94C7 /* APIpasswords.swift in Sources */,
+				D527444E2B1C404600AA94C7 /* APIpasswords.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
