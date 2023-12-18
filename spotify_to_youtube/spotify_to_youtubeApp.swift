@@ -10,12 +10,14 @@ import OAuthSwift
 
 @main
 struct spotify_to_youtubeApp: App {
+    
     var body: some Scene {
+        
         WindowGroup {
             ContentView()
                 .onOpenURL(perform: {url in
-                    if url.host == "https" {
-                        OAuth2Swift.handle(url: url)
+                    if url.host == "spotify-to-youtube" {
+                        OAuthSwift.handle(url:url)
                     }
                 })
         }
